@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\rotatingCube.cs">
+    <Files>
+      <File FileName="Assets\Character.cs" Line="114" Column="49" />
+      <File FileName="Assets\rotateCamera.cs" Line="16" Column="4" />
+      <File FileName="Assets\CharacterCamera.cs" Line="15" Column="59" />
+      <File FileName="Assets\AICube.cs" Line="51" Column="94" />
+      <File FileName="Assets\Goal.cs" Line="39" Column="3" />
+      <File FileName="Assets\LevelTexture.cs" Line="6" Column="26" />
+      <File FileName="Assets\rotateObject.cs" Line="35" Column="1" />
+      <File FileName="Assets\ShowText.cs" Line="25" Column="4" />
+      <File FileName="Assets\DeadArea.cs" Line="6" Column="28" />
+      <File FileName="Assets\Unfrezze.cs" Line="18" Column="2" />
+      <File FileName="Assets\UnitySteer\OpenDoor.cs" Line="10" Column="9" />
+      <File FileName="Assets\rotatingCube.cs" Line="31" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
