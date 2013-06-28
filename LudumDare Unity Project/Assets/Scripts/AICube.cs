@@ -13,18 +13,27 @@ public class AICube : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		System.Random r = new System.Random();
 		
-		color = new Color(r.Next(0,20),r.Next(0,20),r.Next(0,20),255);
+		float red;
+		float green;
+		float blue;
+		while(true)
+		{
+			red = UnityEngine.Random.value;
+			green = UnityEngine.Random.value;
+			blue = UnityEngine.Random.value;
+			if((red + green + blue) >1 && (red + green + blue) <2 )
+				break;
+			
+		}
+		color = new Color(red,green,blue);
 		renderer.material.color = color;
-
 	}
 	
 	public void makeSmaller(float scale)
 	{
-				
 		transform.localScale -= new  Vector3(scale,scale,scale);
-		if( transform.localScale.x <= 0)
+		if( transform.localScale.y <= 0)
 			Destroy(gameObject);
 	}
 	
@@ -38,30 +47,20 @@ public class AICube : MonoBehaviour {
 		
 		if(forceOn)
 		{
-			
 			Collider[] basicsInRange = Physics.OverlapSphere(transform.position,5);
 			
 			for(int i=0; i< basicsInRange.Length; i++)
 			{
 				if(basicsInRange[i].gameObject.tag == "Player")
 				{
-					//Debug.DrawLine(transform.position,basicsInRange[i].transform.position);
+					Debug.DrawLine(transform.position,basicsInRange[i].transform.position);
 					Vector3 heading = basicsInRange[i].transform.position - transform.position;
 					float normalize =1 -(heading.magnitude / 5);
 					
-					if(force == forces.Attraction)
-					{
-
-						gameObject.rigidbody.AddForce(( heading * 20 * normalize * transform.localScale.x *1.5f ));
-					}else
-					{
-
-						
-						if(transform.localScale.x > 0.2f)
-						{
-							gameObject.rigidbody.AddForce(-1*( heading * 20 * normalize * transform.localScale.x *1.5f));
-						
-						}
+					if(force == forces.Attraction) {
+						gameObject.rigidbody.AddForce(( heading * 2000 * normalize * transform.localScale.x *3f * Time.deltaTime ));
+					}else{
+						gameObject.rigidbody.AddForce(-1*( heading * 2000 * normalize * transform.localScale.x *3f * Time.deltaTime));
 					}
 				}
 			}

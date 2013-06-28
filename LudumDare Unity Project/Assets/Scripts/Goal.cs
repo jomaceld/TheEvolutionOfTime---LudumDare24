@@ -31,7 +31,7 @@ public class Goal : MonoBehaviour {
 		{
 			Color co = new Color(c.renderer.material.color.r,c.renderer.material.color.g,c.renderer.material.color.b,renderer.material.color.a);
 			renderer.material.color = co;
-			//particles.renderer.material.color = co;
+			particles.renderer.material.color = co;
 		}
 	}
 	
@@ -44,7 +44,7 @@ public class Goal : MonoBehaviour {
 			//if(particles != null)
 				//particles.renderer.material.color = new Color(renderer.material.color.r+0.1f,renderer.material.color.g+0.1f ,renderer.material.color.b +0.1f,renderer.material.color.a );
 			
-			if(totalTime >= 1.5f)
+			if(totalTime >= 0.1f)
 				changeLevel();
 		}
 	}

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{280E38C8-4BD9-AA10-F0D7-E44E30D90362}") = "LudumDare Unity Project", "Assembly-CSharp.csproj", "{55261084-7C01-05D5-6A9A-0E82C6F2B083}"
 EndProject
-Project("{280E38C8-4BD9-AA10-F0D7-E44E30D90362}") = "LudumDare Unity Project", "Assembly-UnityScript-firstpass.unityproj", "{9AE4E58C-7E24-F597-072F-0902B9B20C50}"
+Project("{280E38C8-4BD9-AA10-F0D7-E44E30D90362}") = "LudumDare Unity Project", "Assembly-CSharp-Editor.csproj", "{AA561157-FB60-ACC3-5EFB-A7D1BC71BEDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,15 +15,15 @@ Global
 		{55261084-7C01-05D5-6A9A-0E82C6F2B083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55261084-7C01-05D5-6A9A-0E82C6F2B083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55261084-7C01-05D5-6A9A-0E82C6F2B083}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9AE4E58C-7E24-F597-072F-0902B9B20C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AE4E58C-7E24-F597-072F-0902B9B20C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AE4E58C-7E24-F597-072F-0902B9B20C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AE4E58C-7E24-F597-072F-0902B9B20C50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA561157-FB60-ACC3-5EFB-A7D1BC71BEDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA561157-FB60-ACC3-5EFB-A7D1BC71BEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA561157-FB60-ACC3-5EFB-A7D1BC71BEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA561157-FB60-ACC3-5EFB-A7D1BC71BEDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																															GlobalSection(MonoDevelopProperties) = preSolution
+																																																																				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

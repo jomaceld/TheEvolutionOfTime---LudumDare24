@@ -15,12 +15,12 @@ public class Unfrezze : MonoBehaviour {
 	
 	}
 	
-	void OnTriggerStay(Collider c) 
+	void OnTriggerEnter(Collider c) 
 	{
 		if(c.gameObject.tag == "Player")
 		{
 			target.rigidbody.constraints = RigidbodyConstraints.None;
-			target.rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY |  RigidbodyConstraints.FreezePositionZ;
+			target.rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ |  RigidbodyConstraints.FreezePositionZ |  RigidbodyConstraints.FreezePositionX;
 			target.rigidbody.useGravity = true;
 		}
 	}

@@ -9,7 +9,7 @@ public class TextDescription : MonoBehaviour {
 	public float bk_OpenSpeed = 0.2f;
 	public Vector2 bk_MaxSize;
 	public string textToDisplay;
-	
+	public float lineSpacing = 1.7f; 
 	public int MAX_LINES = 5;
 	
 	
@@ -50,7 +50,7 @@ public class TextDescription : MonoBehaviour {
 		_aux_text_GOb.AddComponent<GUIText>();
 		text_guiText = _aux_text_GOb.guiText;
 		text_guiText.font = font;
-		text_guiText.lineSpacing = 1.4f;
+		text_guiText.lineSpacing = lineSpacing;
 		// Fill lines array
 		initializeText();
 		
@@ -138,7 +138,7 @@ public class TextDescription : MonoBehaviour {
 		}
 		
 		// End of page
-		if(linesDisplayed == MAX_LINES){
+		if(linesDisplayed > MAX_LINES){
 			linesDisplayed = 0;
 			state = 3;
 			return;
@@ -169,7 +169,6 @@ public class TextDescription : MonoBehaviour {
 						for(int i= charIndex; i <= l.IndexOf(" ") ;i++)
 						{
 							text_guiText.text += l[i];
-							print (l[i]);
 							charIndex ++;
 						}
 						
@@ -218,7 +217,7 @@ public class TextDescription : MonoBehaviour {
 				}
 				break;
 			case 3:
-				if(Input.GetKeyUp(KeyCode.P))
+				if(Input.anyKey)
 				{
 					if(lineIndex +1 <= lines.Count)
 					{

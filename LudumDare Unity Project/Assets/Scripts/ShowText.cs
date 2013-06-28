@@ -4,7 +4,6 @@ using System.Collections;
 public class ShowText : MonoBehaviour {
 	
 	public string text;
-	public float time = 5;
 	bool show = true;
 	public TextDescription textDescription;
 
@@ -16,7 +15,6 @@ public class ShowText : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 	
 	}
 	
@@ -26,9 +24,15 @@ public class ShowText : MonoBehaviour {
 		{
 			if(textDescription != null)
 				textDescription.activateText(text);
-			/*
-			c.GetComponent<Character>().showText(text,time);*/
 			show = false;
 		}
 	}
+	
+	/*void OnTriggerExit(Collider c) 
+	{
+		if(c.gameObject.tag == "Player" && !show)
+		{
+			show = true;
+		}
+	}*/
 }

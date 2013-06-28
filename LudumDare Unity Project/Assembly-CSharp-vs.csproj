@@ -49,23 +49,24 @@
      <Compile Include="Assets\Scripts\CharacterCamera.cs" />
      <Compile Include="Assets\Scripts\DeadArea.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
+     <Compile Include="Assets\Scripts\GameMan.cs" />
      <Compile Include="Assets\Scripts\Goal.cs" />
+     <Compile Include="Assets\Scripts\InitScreenController.cs" />
      <Compile Include="Assets\Scripts\LevelControl.cs" />
      <Compile Include="Assets\Scripts\LevelTexture.cs" />
+     <Compile Include="Assets\Scripts\ScoreScreen\ScoreMain.cs" />
+     <Compile Include="Assets\Scripts\Scores.cs" />
      <Compile Include="Assets\Scripts\ShowText.cs" />
      <Compile Include="Assets\Scripts\TextDescription.cs" />
      <Compile Include="Assets\Scripts\Unfrezze.cs" />
+     <Compile Include="Assets\Scripts\doorOpen.cs" />
      <Compile Include="Assets\Scripts\rotateCamera.cs" />
-     <Compile Include="Assets\Scripts\rotateObject.cs" />
-     <Compile Include="Assets\Scripts\rotatingCube.cs" />
+     <Compile Include="Assets\Scripts\rotatingCubeFinalLevel.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
- <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
